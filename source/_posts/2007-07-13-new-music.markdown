@@ -1,0 +1,18 @@
+---
+layout: post
+title: New Music
+author: Matt McMahand
+date: 2007/07/13
+comments: false
+categories: [Music, Playlists]
+---
+
+Here's a couple of CDs that I've been listening to this month.
+
+<ul>
+	<li>Smashing Pumpkins - Zeitgeist</li>
+	<li>Interpol - Our Love to Admire</li>
+	<li>Tegan & Sara - The Con</li>
+</ul>
+
+Grab em from your local tracker.
