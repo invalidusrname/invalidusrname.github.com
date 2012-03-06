@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Title Be Here]]></title>
+  <link href="http://invalidusrname.github.com/atom.xml" rel="self"/>
+  <link href="http://invalidusrname.github.com/"/>
+  <updated>2012-03-06T01:49:17-05:00</updated>
+  <id>http://invalidusrname.github.com/</id>
+  <author>
+    <name><![CDATA[Matt McMahand]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[History]]></title>
+    <link href="http://invalidusrname.github.com/blog/2012/03/06/history/"/>
+    <updated>2012-03-06T01:26:00-05:00</updated>
+    <id>http://invalidusrname.github.com/blog/2012/03/06/history</id>
+    <content type="html"><![CDATA[<p>The more things change, the more they stay the same.</p>
+
+<pre><code>
+$ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+64 git
+59 ./bin/rake
+56 ls
+53 vim
+44 cd
+30 gst
+20 gp
+17 cat
+16 rake
+13 glog
+</code>
+</pre>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Masking Credit Card Numbers with MySQL]]></title>
+    <link href="http://invalidusrname.github.com/blog/2010/10/12/masking-credit-card-numbers-with-mysql/"/>
+    <updated>2010-10-12T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2010/10/12/masking-credit-card-numbers-with-mysql</id>
+    <content type="html"><![CDATA[<p>So you need to export a list of credit card numbers and send it off someone, but don&#8217;t want all the digits shown. Sometimes it&#8217;s for post-processing, QA, or to solve a client dispute with an order. Whatever the case may be, here&#8217;s how to mask numbers in MySQL:</p>
+
+<p>Masks everything but the first and last 4 digits:</p>
+
+<pre><code>SELECT
+  CONCAT(
+    SUBSTRING(c.card_number, 1, 4),
+    REPEAT('X', CHAR_LENGTH(c.card_number) - 8),
+    SUBSTRING(c.card_number, -4)
+  ) AS masked_card
+FROM
+  table_name;
+</code></pre>
+
+<p>Or if you want just the last 4 digits and everything else masked:</p>
+
+<pre><code>SELECT
+  CONCAT(
+    REPEAT('X', CHAR_LENGTH(c.card_number) - 4),
+    SUBSTRING(c.card_number, -4)
+  ) AS masked_card
+FROM
+  table_name;
+</code></pre>
+
+<p>Replace table_name as appropriate. To find out more on these functions I&#8217;ve used, check the mysql docs on <a href="http://dev.mysql.com/doc/refman/5.0/en/string-functions.html">String Functions</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The President with a Lightsaber]]></title>
+    <link href="http://invalidusrname.github.com/blog/2009/09/17/the-president-with-a-lightsaber/"/>
+    <updated>2009-09-17T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2009/09/17/the-president-with-a-lightsaber</id>
+    <content type="html"><![CDATA[<p><img src="http://0.tqn.com/d/politicalhumor/1/0/i/w/2/obama-light-saber-sm.jpg" alt="500x_Obama1.jpg" /></p>
+
+<p>How awesome is that?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using Keyboard Shortcuts to Mute Skype Calls on OSX]]></title>
+    <link href="http://invalidusrname.github.com/blog/2009/09/10/using-keyboard-shortcuts-to-mute-skype-calls-on-osx/"/>
+    <updated>2009-09-10T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2009/09/10/using-keyboard-shortcuts-to-mute-skype-calls-on-osx</id>
+    <content type="html"><![CDATA[<p>I’ve been a Skype user for over 5 years now. The service and call quality have always been great for single and conference style calls. One thing I’ve noticed about myself though is that I breathe into the headset at odd times, making everyone else feel like there’s serial killer or an angry giant on the other end. Skype solves these uncomfortable sounds for everyone else with the mute button. The downside is that there’s no shortcut for this. To mute you have to use the mouse, which is slower for me and louder when I click. My keyboard on the other hand is quick and really quiet.</p>
+
+<p>Enter keyboard shortcuts. From System Preference pane, there’s a keyboard shortcuts panel you can add application shortcuts for any menu item. The only thing you need is the name of the menu item.  In my case the menu item is Mute and UnMute, Skype just changes the menu item’s name depending on the state of the audio for the call.</p>
+
+<p><img src="http://invalid8.com/wp-content/uploads/2009/09/20090910-86ff3dbdf2pqddd6h43umt39am1.jpeg" alt="System Shortcuts" title="OSX System Shortcut Window" width="450" height="281" class="alignnone size-full wp-image-85" /></p>
+
+<p>Once you add the shortcut in, it’ll show up in the menubar.</p>
+
+<p><img src="http://invalid8.com/wp-content/uploads/2009/09/20090910-r4xn2ekidjaypjapmcq165wcuj1.jpeg" alt="Skype call bar" title="Skype call bar" width="180" height="177" class="alignnone size-full wp-image-87" /></p>
+
+<p>So now you can continue breathing loud, stuffing your mouth, continue listening to CNN, or whatever it is that might annoy people on the other end of the line.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Small Ruby Date trick]]></title>
+    <link href="http://invalidusrname.github.com/blog/2009/05/01/small-ruby-date-trick/"/>
+    <updated>2009-05-01T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2009/05/01/small-ruby-date-trick</id>
+    <content type="html"><![CDATA[<p>Well I don&#8217;t know if it&#8217;s a trick, but this sure was useful when I was coding up some sql reports.
+<code></p>
+
+<blockquote><blockquote><p>Date.new(2009, 1, -1).to_s
+=> "2009-01-31"
+</code></p></blockquote></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Agile Carolinas Andy Hunt Presentation]]></title>
+    <link href="http://invalidusrname.github.com/blog/2009/04/29/agile-carolinas-andy-hunt-presentation/"/>
+    <updated>2009-04-29T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2009/04/29/agile-carolinas-andy-hunt-presentation</id>
+    <content type="html"><![CDATA[<p>When I first moved out to Charlotte, I didn’t have much experience working in a corporate environment, and I went along with many of bad practices the company had. Around the same time I picked up The Pragmatic Programmer by Andy Hunt and tried to use the tips in the book. Sometimes I used the tips at the wrong time or misinterpreted principles, but for the most part it helped bring out many of the social and communicative aspects of being a programmer that I wasn’t very good at. Being able to detect a bad situation before things turn ugly can be a lifesaver. It also helped with preventing me for constantly working 50+ hrs a week and not benefitting from it.</p>
+
+<p>That was about 4 years ago. Fast forward to yesterday, where I attended an Agile Carolina meetup. I’ve been a member for about a year, but haven’t attended to any meetings lately. Then I got an email saying Andy Hunt was coming down to Charlotte and was going to give a talk on how to “Refactor Your Wetware”. Odd title, but if it was going to be anything like his books, I couldn’t miss the talk.</p>
+
+<p>For the most part, the talk was less about programming, and more about we operate as people. It reminded me a little bit of when I took psychology courses, but used with metaphors like CPUs, shared buses, and memory to describe how our brain works. Here’s a couple of points I found interesting about the talk:</p>
+
+<p><strong>Aesthetics affect cognitive performance.</strong></p>
+
+<p>There’s a reason why you should get up and walk around when stuck on a problem. Dwelling on it in the same space won’t solve them. Brining in other senses by stepping away from the keyboard and taking a walk, smelling the ink while using a whiteboard, or taking a break to play a video game can help stimulate other areas to help solve a problem.</p>
+
+<p><strong>Write everything down.</strong></p>
+
+<p>Everything. Yes, everything. He maintains a personal wiki, covering everything from daily habits, to one-time affairs. I’ll have to look more into this because it seems interesting. I’ve always used wikis for work, but never in my personal life. I also noted the act of writing is more important than going back and reviewing what you wrote. Sometimes you have to write something and remind yourself multiple times, but other times writing it down once is enough to never have to look again.</p>
+
+<p>Andy suggested that our memories are terrible. He even went as far as saying those memories you believe to be vivid will change over time or possibly never occurred in the way you imagined them. He suggested that even if it doesn’t make sense, keep writing. Use a moleskin, small stacks of paper, whatever. Just keep writing. I suppose the idea here is that the more you notice something and write it down, the more you think about it. Instead of your brain sitting idle, it’s working more and more. Then your brain gets used to thinking this way and you are able to come up with better ideas and solutions. This was probably the most important part of the talk for me.</p>
+
+<p><strong>Failing takes the pressure away.</strong></p>
+
+<p>If it’s ok to fail, then you won’t. A little funky, but makes sense when you talk about unit testing. Basically the first thing you do when you write the test is that it actually fails. So I suppose if we’re already failing at the beginning, that takes some of the stress out.</p>
+
+<p><strong>Handling Interruptions</strong></p>
+
+<p>Interruptions happen all the time and can take a long time to get you back in productive mode. One interesting tip Andy mentioned was getting as much information out of your head before you’re completely interrupted. So if the telephone rings, you’d type out as much as you could before answering the phone. It’s alright if it’s not a full sentence, but the idea is to leave breadcrumbs and be able to pick up where you left off faster.</p>
+
+<p>I’m a left-brained guy (with the right side sneaking out to play guitar), so it was nice to hear from someone who could offer tips on how to improve your wetware. I’m probably the youngest in the group, but Andy presented in a way that was understandable to pretty much every generation of programmer that was there. His book comes out really soon and I’d recommend it to anyone who’s a fan of the pragmatic series. It was also nice to put a face and voice to all the words you have read that helped shape the way you are as a programmer.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MySQL bindings with Ruby 1.9]]></title>
+    <link href="http://invalidusrname.github.com/blog/2009/03/07/mysql-bindings-with-ruby-19/"/>
+    <updated>2009-03-07T00:00:00-05:00</updated>
+    <id>http://invalidusrname.github.com/blog/2009/03/07/mysql-bindings-with-ruby-19</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve started messing around with Rails 2.3.1 (aka RC2) and seeing how it works with Ruby 1.9. Aside from having to install all my gems for the new version of Ruby, the mysql bindings needed to be installed too. Here&#8217;s how I got it working:</p>
+
+<p><em>Note: I&#8217;m using macports installations of <a href="http://trac.macports.org/browser/trunk/dports/lang/ruby19/Portfile">ruby 1.9</a> and <a href="http://trac.macports.org/browser/trunk/dports/databases/mysql5/Portfile">mysql</a></em></p>
+
+<p>Grab mysql-ruby
+<code>wget http://rubyforge.org/frs/download.php/51087/mysql-ruby-2.8.1.tar.gz</code></p>
+
+<p>Setup to use your mysql configuration files
+<code>ruby1.9 extconf.rb --with-mysql-include=/opt/local/include/mysql5/mysql/ --with-mysql-lib=/opt/local/lib/mysql5/mysql/ --with-mysql-config=/opt/local/bin/mysql_config5
+</code></p>
+
+<p><code>sudo make</code></p>
+
+<p>Run tests to make sure everything passes
+<code>ruby1.9 ./test.rb -- localhost</code></p>
+
+<p>And to finish it out
+<code>sudo make install</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[History]]></title>
+    <link href="http://invalidusrname.github.com/blog/2008/09/01/history/"/>
+    <updated>2008-09-01T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2008/09/01/history</id>
+    <content type="html"><![CDATA[<p>I’ve been trying out Git lately. Can you tell?</p>
+
+
+
+
+<pre><code>
+$ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+55 git
+44 cd
+42 ls
+39 rake
+35 ruby
+34 sudo
+26 ri
+21 port
+16 rm
+13 irb
+</code>
+</pre>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First EnvyCasts Video is available]]></title>
+    <link href="http://invalidusrname.github.com/blog/2008/08/31/first-envycasts-video-is-available/"/>
+    <updated>2008-08-31T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2008/08/31/first-envycasts-video-is-available</id>
+    <content type="html"><![CDATA[<p>This week the <a href="http://railsenvy.com">railsenvy</a> guys released their very first screencast. They’ve got weekly podcast, delivering news on the ruby/rails community. It’s pretty good. If you like banter and sound clips, you’ll enjoy it.</p>
+
+
+
+
+<p>Their first screencast is titled Advanced Active Record, covering the following:</p>
+
+
+
+
+<ul>
+    <li>Loading large data sets</li>
+    <li>Using indexes</li>
+    <li>Caching</li>
+    <li>Named Scope</li>
+    <li>STI &amp; Polymorphic Associations</li>
+    <li>Dirty Objects</li>
+</ul>
+
+
+
+
+<p>They take a different approach from the typical screencasts I’ve seen with rails. Normally screencasts involve someone typing away in Textmate, switching over to the terminal, and then showing a demo in Firefox. Instead, they’ve taken the greenscreen approach. Code is displayed in the background, with Jason and Gregg popping in and out of the forefront to explain things. There’s plenty of charts and diagrams too. I really like this approach. To me, it’s more exciting to see things come across the screen with a person pointing at them. If you’re afraid these are like typical powerpoint presentations, don’t be. These guys do a good job of explaining how each of the concepts work, showing snippets, and examining log files so you don’t have to drown in some of the gigantic SQL that’s generated by ActiveRecord. There’s also examples of what’s new in Rails 2.1, including dirty objects and how partial updates work.</p>
+
+
+
+
+<p>So if you want to learn some of the more advanced active record topics, <a href="http://envycasts.com/products/advanced-activerecord">check it out</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cymbal Rush]]></title>
+    <link href="http://invalidusrname.github.com/blog/2008/06/15/cymbal-rush/"/>
+    <updated>2008-06-15T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2008/06/15/cymbal-rush</id>
+    <content type="html"><![CDATA[<p>Radiohead recently played at a pair of shows in France. On the second night, Thom played something off of The Eraser. Very nice to see it get played. Here it is:</p>
+
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/9il1eGXC1yw&hl=en"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/9il1eGXC1yw&hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="344"></embed></object>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Big words != smart]]></title>
+    <link href="http://invalidusrname.github.com/blog/2008/04/23/big-words--smart/"/>
+    <updated>2008-04-23T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2008/04/23/big-words&#8211;smart</id>
+    <content type="html"><![CDATA[<p>Filling up sentences with big words doesn&#8217;t get your point across any better. It just makes noise.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Work Speeds]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/10/12/work-speeds/"/>
+    <updated>2007-10-12T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/10/12/work-speeds</id>
+    <content type="html"><![CDATA[<p>So internet is fully working at the office. I&#8217;d say that it is a little faster than before.</p>
+
+<p><img src="http://www.speedtest.net/result/246307064.png" alt="Caronet" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[In Rainbows]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/10/11/in-rainbows/"/>
+    <updated>2007-10-11T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/10/11/in-rainbows</id>
+    <content type="html"><![CDATA[<p>It&#8217;s <a href="http://www.inrainbows.com">out</a>. It&#8217;s awesome.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SpeedTest]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/07/18/speedtest/"/>
+    <updated>2007-07-18T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/07/18/speedtest</id>
+    <content type="html"><![CDATA[<p>I stumbled upon <a href="http://speedtest.net">speedtest</a> today. Slick interface, even if all it does it test your bandwidth.</p>
+
+<p>Here&#8217;s what I get at work:</p>
+
+<p><img src="http://www.speedtest.net/result/156684666.png" alt="Work" /></p>
+
+<p><i>I&#8217;ll post home speeds later.</i></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Music]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/07/13/new-music/"/>
+    <updated>2007-07-13T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/07/13/new-music</id>
+    <content type="html"><![CDATA[<p>Here&#8217;s a couple of CDs that I&#8217;ve been listening to this month.</p>
+
+<ul>
+    <li>Smashing Pumpkins - Zeitgeist</li>
+    <li>Interpol - Our Love to Admire</li>
+    <li>Tegan & Sara - The Con</li>
+</ul>
+
+
+<p>Grab em from your local tracker.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iTerm]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/07/09/iterm/"/>
+    <updated>2007-07-09T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/07/09/iterm</id>
+    <content type="html"><![CDATA[<p>A must have app for shell fans. The default terminal for OS X is decent, but lacks tabs, bookmarks, and multiple profiles. iTerm includes all these missing features. I&#8217;ve been running iTerm since version .71 and finally upgraded to .95 today. It looks like a few bugs I&#8217;ve been waiting for to be fixed, i.e. better wrapping, have been. <a href="http://iterm.sourceforge.net">Checks it out</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Radiohead Snippets]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/06/16/radiohead-snippets/"/>
+    <updated>2007-06-16T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/06/16/radiohead-snippets</id>
+    <content type="html"><![CDATA[<p>A new clip of audio has been posted on DeadAirSpace. Sounds like Down is the New Up, All I Need, Arpeggi, and Open Pick, and Bangers &amp; Mash are making it to the new album.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Word!]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/06/14/my-word/"/>
+    <updated>2007-06-14T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/06/14/my-word</id>
+    <content type="html"><![CDATA[<p>SonyEricsson announced some new cell phones today. I can&#8217;t wait for the <a href="http://www.sonyericsson.com/spg.jsp?cc=us&lc=en&ver=4000&template=pip1&pid=10868&zone=pp">K850i</a> to come to the States.   Includes a 5 megapixel cam, NetFront browser, and tri-band HSDPA, and quadband GSM plus EDGE.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[10 Points.]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/06/12/10-points/"/>
+    <updated>2007-06-12T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/06/12/10-points</id>
+    <content type="html"><![CDATA[<p>Well this just looks <a href="http://www.thinkgeek.com/stuff/41/wiihelm.shtml">stupid</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mas Geetar]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/04/23/mas-geetar/"/>
+    <updated>2007-04-23T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/04/23/mas-geetar</id>
+    <content type="html"><![CDATA[<p>So perhaps something with more guitar; one not so much</p>
+
+
+<ul>
+<li>Rise Against - Prayer of the Refugee</li>
+<li>10 Years - Through The Iris</li>
+<li>Radiohead - Open Pick</li>
+<li>Sugarcult - Los Angeles</li>
+<li>At The Drive In - Napoleon Solo</li>
+<li>Chevelle - Well Enough Alone</li>
+<li>Nine Inch Nails - Me, I&#8217;m Not</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
