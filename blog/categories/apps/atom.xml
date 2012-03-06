@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Apps | Title Be Here]]></title>
+  <link href="http://invalidusrname.github.com/blog/categories/apps/atom.xml" rel="self"/>
+  <link href="http://invalidusrname.github.com/"/>
+  <updated>2012-03-06T01:49:17-05:00</updated>
+  <id>http://invalidusrname.github.com/</id>
+  <author>
+    <name><![CDATA[Matt McMahand]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[iTerm]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/07/09/iterm/"/>
+    <updated>2007-07-09T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/07/09/iterm</id>
+    <content type="html"><![CDATA[<p>A must have app for shell fans. The default terminal for OS X is decent, but lacks tabs, bookmarks, and multiple profiles. iTerm includes all these missing features. I've been running iTerm since version .71 and finally upgraded to .95 today. It looks like a few bugs I've been waiting for to be fixed, i.e. better wrapping, have been. <a href="http://iterm.sourceforge.net">Checks it out</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WriteRoom]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/01/26/writeroom/"/>
+    <updated>2007-01-26T00:00:00-05:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/01/26/writeroom</id>
+    <content type="html"><![CDATA[<p>Green text. Black background. Blink. Blink.</p>
+
+<p>There's nothing scarier than the blank page when writing. The fear of staring at an empty canvas without a shred of intuition as where or how to begin. I used to write on a daily basis about anything. Places I went, random thoughts throughout the day. Somehow I've become the couch potato of thought expression.</p>
+
+<p>Lying sideways on the bed, I decide to write. Words being to form. Gotta get the sleepies out first. Stretch that creative muscle. A comma here, a clever word there. Combine two unrelated sentences into a single one. Oh yes, that'll do. Blocks of green start to fill the once blank screen. Confidence ensues. I like cake.</p>
+
+<p>But then you become tired and lose focus. Magic words no longer run through your fingertips. You read over what you've put down so far.</p>
+
+<p>Cake? Rubbish. Delete.</p>
+
+<p>Well that got us nowhere.</p>
+
+<p>Although I don't have much to say, I did start reading Rosenberg's <a href="http://www.dreamingincode.com/">Dreaming in Code</a> and must say it's a pretty good so far. It's not a technical book like something from O'Reilly or Apress, rather a look at a start-up from a nontechnical person's point of view. From what I've read so far, me likie. I've never read a book that's so eloquently woven a company and the process of programming together. I'm jealous.</p>
+]]></content>
+  </entry>
+  
+</feed>

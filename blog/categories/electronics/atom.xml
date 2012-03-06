@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Electronics | Title Be Here]]></title>
+  <link href="http://invalidusrname.github.com/blog/categories/electronics/atom.xml" rel="self"/>
+  <link href="http://invalidusrname.github.com/"/>
+  <updated>2012-03-06T01:49:17-05:00</updated>
+  <id>http://invalidusrname.github.com/</id>
+  <author>
+    <name><![CDATA[Matt McMahand]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Word!]]></title>
+    <link href="http://invalidusrname.github.com/blog/2007/06/14/my-word/"/>
+    <updated>2007-06-14T00:00:00-04:00</updated>
+    <id>http://invalidusrname.github.com/blog/2007/06/14/my-word</id>
+    <content type="html"><![CDATA[<p>SonyEricsson announced some new cell phones today. I can't wait for the <a href="http://www.sonyericsson.com/spg.jsp?cc=us&lc=en&ver=4000&template=pip1&pid=10868&zone=pp">K850i</a> to come to the States.   Includes a 5 megapixel cam, NetFront browser, and tri-band HSDPA, and quadband GSM plus EDGE.</p>
+]]></content>
+  </entry>
+  
+</feed>
