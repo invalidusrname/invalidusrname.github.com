@@ -4,7 +4,7 @@
   <title><![CDATA[Title Be Here]]></title>
   <link href="http://invalidusrname.github.com/atom.xml" rel="self"/>
   <link href="http://invalidusrname.github.com/"/>
-  <updated>2012-03-06T11:48:11-05:00</updated>
+  <updated>2012-03-10T23:07:44-05:00</updated>
   <id>http://invalidusrname.github.com/</id>
   <author>
     <name><![CDATA[Matt McMahand]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Meetup Events in Octopress]]></title>
+    <link href="http://invalidusrname.github.com/blog/2012/03/10/meetup-events-in-octopress/"/>
+    <updated>2012-03-10T23:01:00-05:00</updated>
+    <id>http://invalidusrname.github.com/blog/2012/03/10/meetup-events-in-octopress</id>
+    <content type="html"><![CDATA[<p>Have an Ocotpress-powered site and want to show upcoming meetup.com events? Check out <a href="https://github.com/invalidusrname/meetup-octopress">meetup-octopress</a>. It&#8217;s a work in progress, but good enough to display dates and event names in the sidebar for the <a href="http://www.charlotteruby.org">Charlotte Ruby User Group</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[History]]></title>
@@ -351,27 +360,6 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <updated>2007-06-12T00:00:00-04:00</updated>
     <id>http://invalidusrname.github.com/blog/2007/06/12/10-points</id>
     <content type="html"><![CDATA[<p>Well this just looks <a href="http://www.thinkgeek.com/stuff/41/wiihelm.shtml">stupid</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mas Geetar]]></title>
-    <link href="http://invalidusrname.github.com/blog/2007/04/23/mas-geetar/"/>
-    <updated>2007-04-23T00:00:00-04:00</updated>
-    <id>http://invalidusrname.github.com/blog/2007/04/23/mas-geetar</id>
-    <content type="html"><![CDATA[<p>So perhaps something with more guitar; one not so much</p>
-
-
-<ul>
-<li>Rise Against - Prayer of the Refugee</li>
-<li>10 Years - Through The Iris</li>
-<li>Radiohead - Open Pick</li>
-<li>Sugarcult - Los Angeles</li>
-<li>At The Drive In - Napoleon Solo</li>
-<li>Chevelle - Well Enough Alone</li>
-<li>Nine Inch Nails - Me, I&#8217;m Not</li>
-</ul>
-
 ]]></content>
   </entry>
   
