@@ -4,7 +4,7 @@
   <title><![CDATA[Title Be Here]]></title>
   <link href="http://invalidusrname.github.com/atom.xml" rel="self"/>
   <link href="http://invalidusrname.github.com/"/>
-  <updated>2012-03-13T23:34:11-04:00</updated>
+  <updated>2018-01-15T11:06:51-05:00</updated>
   <id>http://invalidusrname.github.com/</id>
   <author>
     <name><![CDATA[Matt McMahand]]></name>
@@ -14,11 +14,35 @@
 
   
   <entry>
+    <title type="html"><![CDATA[A few tracks]]></title>
+    <link href="http://invalidusrname.github.com/blog/2018/01/14/a-few-tracks/"/>
+    <updated>2018-01-14T00:00:00-05:00</updated>
+    <id>http://invalidusrname.github.com/blog/2018/01/14/a-few-tracks</id>
+    <content type="html"><![CDATA[<p>A decade later and we’re still making these.</p>
+
+<ul>
+  <li>Cults - Always Forever</li>
+  <li>Band of Horses - Laredo</li>
+  <li>Young the Giant - Caugh Syrup</li>
+  <li>Portugal. The Man - When the War Ends</li>
+  <li>Phantogram - Same Old Blues</li>
+  <li>Radiohead - Ful Stop</li>
+  <li>Kanye West - Runaway</li>
+  <li>Now, Now - Giants</li>
+  <li>Deer Tick - Christ Jesus</li>
+  <li>Tennis - Origins</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Meetup Events in Octopress]]></title>
     <link href="http://invalidusrname.github.com/blog/2012/03/10/meetup-events-in-octopress/"/>
     <updated>2012-03-10T23:01:00-05:00</updated>
     <id>http://invalidusrname.github.com/blog/2012/03/10/meetup-events-in-octopress</id>
-    <content type="html"><![CDATA[<p>Have an Ocotpress-powered site and want to show upcoming meetup.com events? Check out <a href="https://github.com/invalidusrname/meetup-octopress">meetup-octopress</a>. It&#8217;s a work in progress, but good enough to display dates and event names in the sidebar for the <a href="http://www.charlotteruby.org">Charlotte Ruby User Group</a>.</p>
+    <content type="html"><![CDATA[<p>Have an Ocotpress-powered site and want to show upcoming meetup.com events? Check out <a href="https://github.com/invalidusrname/meetup-octopress">meetup-octopress</a>. It’s a work in progress, but good enough to display dates and event names in the sidebar for the <a href="http://www.charlotteruby.org">Charlotte Ruby User Group</a>. </p>
+
 ]]></content>
   </entry>
   
@@ -44,8 +68,6 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
 </code>
 </pre>
 
-
-
 ]]></content>
   </entry>
   
@@ -54,7 +76,7 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <link href="http://invalidusrname.github.com/blog/2010/10/12/masking-credit-card-numbers-with-mysql/"/>
     <updated>2010-10-12T00:00:00-04:00</updated>
     <id>http://invalidusrname.github.com/blog/2010/10/12/masking-credit-card-numbers-with-mysql</id>
-    <content type="html"><![CDATA[<p>So you need to export a list of credit card numbers and send it off someone, but don&#8217;t want all the digits shown. Sometimes it&#8217;s for post-processing, QA, or to solve a client dispute with an order. Whatever the case may be, here&#8217;s how to mask numbers in MySQL:</p>
+    <content type="html"><![CDATA[<p>So you need to export a list of credit card numbers and send it off someone, but don’t want all the digits shown. Sometimes it’s for post-processing, QA, or to solve a client dispute with an order. Whatever the case may be, here’s how to mask numbers in MySQL:</p>
 
 <p>Masks everything but the first and last 4 digits:</p>
 
@@ -79,7 +101,7 @@ FROM
   table_name;
 </code></pre>
 
-<p>Replace table_name as appropriate. To find out more on these functions I&#8217;ve used, check the mysql docs on <a href="http://dev.mysql.com/doc/refman/5.0/en/string-functions.html">String Functions</a></p>
+<p>Replace table_name as appropriate. To find out more on these functions I’ve used, check the mysql docs on <a href="http://dev.mysql.com/doc/refman/5.0/en/string-functions.html">String Functions</a></p>
 ]]></content>
   </entry>
   
@@ -118,12 +140,11 @@ FROM
     <link href="http://invalidusrname.github.com/blog/2009/05/01/small-ruby-date-trick/"/>
     <updated>2009-05-01T00:00:00-04:00</updated>
     <id>http://invalidusrname.github.com/blog/2009/05/01/small-ruby-date-trick</id>
-    <content type="html"><![CDATA[<p>Well I don&#8217;t know if it&#8217;s a trick, but this sure was useful when I was coding up some sql reports.
-<code></p>
-
-<blockquote><blockquote><p>Date.new(2009, 1, -1).to_s
-=> "2009-01-31"
-</code></p></blockquote></blockquote>
+    <content type="html"><![CDATA[<p>Well I don’t know if it’s a trick, but this sure was useful when I was coding up some sql reports.
+<code>
+&gt;&gt; Date.new(2009, 1, -1).to_s
+=&gt; "2009-01-31"
+</code></p>
 ]]></content>
   </entry>
   
@@ -165,9 +186,9 @@ FROM
     <link href="http://invalidusrname.github.com/blog/2009/03/07/mysql-bindings-with-ruby-19/"/>
     <updated>2009-03-07T00:00:00-05:00</updated>
     <id>http://invalidusrname.github.com/blog/2009/03/07/mysql-bindings-with-ruby-19</id>
-    <content type="html"><![CDATA[<p>I&#8217;ve started messing around with Rails 2.3.1 (aka RC2) and seeing how it works with Ruby 1.9. Aside from having to install all my gems for the new version of Ruby, the mysql bindings needed to be installed too. Here&#8217;s how I got it working:</p>
+    <content type="html"><![CDATA[<p>I’ve started messing around with Rails 2.3.1 (aka RC2) and seeing how it works with Ruby 1.9. Aside from having to install all my gems for the new version of Ruby, the mysql bindings needed to be installed too. Here’s how I got it working:</p>
 
-<p><em>Note: I&#8217;m using macports installations of <a href="http://trac.macports.org/browser/trunk/dports/lang/ruby19/Portfile">ruby 1.9</a> and <a href="http://trac.macports.org/browser/trunk/dports/databases/mysql5/Portfile">mysql</a></em></p>
+<p><em>Note: I’m using macports installations of <a href="http://trac.macports.org/browser/trunk/dports/lang/ruby19/Portfile">ruby 1.9</a> and <a href="http://trac.macports.org/browser/trunk/dports/databases/mysql5/Portfile">mysql</a></em></p>
 
 <p>Grab mysql-ruby
 <code>wget http://rubyforge.org/frs/download.php/51087/mysql-ruby-2.8.1.tar.gz</code></p>
@@ -193,9 +214,6 @@ FROM
     <id>http://invalidusrname.github.com/blog/2008/09/01/history</id>
     <content type="html"><![CDATA[<p>I’ve been trying out Git lately. Can you tell?</p>
 
-
-
-
 <pre><code>
 $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 55 git
@@ -211,8 +229,6 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
 </code>
 </pre>
 
-
-
 ]]></content>
   </entry>
   
@@ -223,33 +239,20 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <id>http://invalidusrname.github.com/blog/2008/08/31/first-envycasts-video-is-available</id>
     <content type="html"><![CDATA[<p>This week the <a href="http://railsenvy.com">railsenvy</a> guys released their very first screencast. They’ve got weekly podcast, delivering news on the ruby/rails community. It’s pretty good. If you like banter and sound clips, you’ll enjoy it.</p>
 
-
-
-
 <p>Their first screencast is titled Advanced Active Record, covering the following:</p>
 
-
-
-
 <ul>
-    <li>Loading large data sets</li>
-    <li>Using indexes</li>
-    <li>Caching</li>
-    <li>Named Scope</li>
-    <li>STI &amp; Polymorphic Associations</li>
-    <li>Dirty Objects</li>
+	<li>Loading large data sets</li>
+	<li>Using indexes</li>
+	<li>Caching</li>
+	<li>Named Scope</li>
+	<li>STI &amp; Polymorphic Associations</li>
+	<li>Dirty Objects</li>
 </ul>
-
-
-
 
 <p>They take a different approach from the typical screencasts I’ve seen with rails. Normally screencasts involve someone typing away in Textmate, switching over to the terminal, and then showing a demo in Firefox. Instead, they’ve taken the greenscreen approach. Code is displayed in the background, with Jason and Gregg popping in and out of the forefront to explain things. There’s plenty of charts and diagrams too. I really like this approach. To me, it’s more exciting to see things come across the screen with a person pointing at them. If you’re afraid these are like typical powerpoint presentations, don’t be. These guys do a good job of explaining how each of the concepts work, showing snippets, and examining log files so you don’t have to drown in some of the gigantic SQL that’s generated by ActiveRecord. There’s also examples of what’s new in Rails 2.1, including dirty objects and how partial updates work.</p>
 
-
-
-
 <p>So if you want to learn some of the more advanced active record topics, <a href="http://envycasts.com/products/advanced-activerecord">check it out</a>.</p>
-
 ]]></content>
   </entry>
   
@@ -260,8 +263,7 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <id>http://invalidusrname.github.com/blog/2008/06/15/cymbal-rush</id>
     <content type="html"><![CDATA[<p>Radiohead recently played at a pair of shows in France. On the second night, Thom played something off of The Eraser. Very nice to see it get played. Here it is:</p>
 
-<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/9il1eGXC1yw&hl=en"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/9il1eGXC1yw&hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="344"></embed></object>
-
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/9il1eGXC1yw&amp;hl=en" /><param name="wmode" value="transparent" /><embed src="http://www.youtube.com/v/9il1eGXC1yw&amp;hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="344" /></object>
 ]]></content>
   </entry>
   
@@ -269,8 +271,8 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <title type="html"><![CDATA[Big words != smart]]></title>
     <link href="http://invalidusrname.github.com/blog/2008/04/23/big-words--smart/"/>
     <updated>2008-04-23T00:00:00-04:00</updated>
-    <id>http://invalidusrname.github.com/blog/2008/04/23/big-words&#8211;smart</id>
-    <content type="html"><![CDATA[<p>Filling up sentences with big words doesn&#8217;t get your point across any better. It just makes noise.</p>
+    <id>http://invalidusrname.github.com/blog/2008/04/23/big-words--smart</id>
+    <content type="html"><![CDATA[<p>Filling up sentences with big words doesn’t get your point across any better. It just makes noise.</p>
 ]]></content>
   </entry>
   
@@ -279,7 +281,7 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <link href="http://invalidusrname.github.com/blog/2007/10/12/work-speeds/"/>
     <updated>2007-10-12T00:00:00-04:00</updated>
     <id>http://invalidusrname.github.com/blog/2007/10/12/work-speeds</id>
-    <content type="html"><![CDATA[<p>So internet is fully working at the office. I&#8217;d say that it is a little faster than before.</p>
+    <content type="html"><![CDATA[<p>So internet is fully working at the office. I’d say that it is a little faster than before.</p>
 
 <p><img src="http://www.speedtest.net/result/246307064.png" alt="Caronet" /></p>
 ]]></content>
@@ -290,7 +292,7 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <link href="http://invalidusrname.github.com/blog/2007/10/11/in-rainbows/"/>
     <updated>2007-10-11T00:00:00-04:00</updated>
     <id>http://invalidusrname.github.com/blog/2007/10/11/in-rainbows</id>
-    <content type="html"><![CDATA[<p>It&#8217;s <a href="http://www.inrainbows.com">out</a>. It&#8217;s awesome.</p>
+    <content type="html"><![CDATA[<p>It’s <a href="http://www.inrainbows.com">out</a>. It’s awesome.</p>
 ]]></content>
   </entry>
   
@@ -301,11 +303,11 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <id>http://invalidusrname.github.com/blog/2007/07/18/speedtest</id>
     <content type="html"><![CDATA[<p>I stumbled upon <a href="http://speedtest.net">speedtest</a> today. Slick interface, even if all it does it test your bandwidth.</p>
 
-<p>Here&#8217;s what I get at work:</p>
+<p>Here’s what I get at work:</p>
 
 <p><img src="http://www.speedtest.net/result/156684666.png" alt="Work" /></p>
 
-<p><i>I&#8217;ll post home speeds later.</i></p>
+<p><i>I’ll post home speeds later.</i></p>
 ]]></content>
   </entry>
   
@@ -314,14 +316,13 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <link href="http://invalidusrname.github.com/blog/2007/07/13/new-music/"/>
     <updated>2007-07-13T00:00:00-04:00</updated>
     <id>http://invalidusrname.github.com/blog/2007/07/13/new-music</id>
-    <content type="html"><![CDATA[<p>Here&#8217;s a couple of CDs that I&#8217;ve been listening to this month.</p>
+    <content type="html"><![CDATA[<p>Here’s a couple of CDs that I’ve been listening to this month.</p>
 
 <ul>
-    <li>Smashing Pumpkins - Zeitgeist</li>
-    <li>Interpol - Our Love to Admire</li>
-    <li>Tegan & Sara - The Con</li>
+	<li>Smashing Pumpkins - Zeitgeist</li>
+	<li>Interpol - Our Love to Admire</li>
+	<li>Tegan &amp; Sara - The Con</li>
 </ul>
-
 
 <p>Grab em from your local tracker.</p>
 ]]></content>
@@ -332,7 +333,7 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <link href="http://invalidusrname.github.com/blog/2007/07/09/iterm/"/>
     <updated>2007-07-09T00:00:00-04:00</updated>
     <id>http://invalidusrname.github.com/blog/2007/07/09/iterm</id>
-    <content type="html"><![CDATA[<p>A must have app for shell fans. The default terminal for OS X is decent, but lacks tabs, bookmarks, and multiple profiles. iTerm includes all these missing features. I&#8217;ve been running iTerm since version .71 and finally upgraded to .95 today. It looks like a few bugs I&#8217;ve been waiting for to be fixed, i.e. better wrapping, have been. <a href="http://iterm.sourceforge.net">Checks it out</a>.</p>
+    <content type="html"><![CDATA[<p>A must have app for shell fans. The default terminal for OS X is decent, but lacks tabs, bookmarks, and multiple profiles. iTerm includes all these missing features. I’ve been running iTerm since version .71 and finally upgraded to .95 today. It looks like a few bugs I’ve been waiting for to be fixed, i.e. better wrapping, have been. <a href="http://iterm.sourceforge.net">Checks it out</a>.</p>
 ]]></content>
   </entry>
   
@@ -350,16 +351,7 @@ $ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | 
     <link href="http://invalidusrname.github.com/blog/2007/06/14/my-word/"/>
     <updated>2007-06-14T00:00:00-04:00</updated>
     <id>http://invalidusrname.github.com/blog/2007/06/14/my-word</id>
-    <content type="html"><![CDATA[<p>SonyEricsson announced some new cell phones today. I can&#8217;t wait for the <a href="http://www.sonyericsson.com/spg.jsp?cc=us&lc=en&ver=4000&template=pip1&pid=10868&zone=pp">K850i</a> to come to the States.   Includes a 5 megapixel cam, NetFront browser, and tri-band HSDPA, and quadband GSM plus EDGE.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[10 Points.]]></title>
-    <link href="http://invalidusrname.github.com/blog/2007/06/12/10-points/"/>
-    <updated>2007-06-12T00:00:00-04:00</updated>
-    <id>http://invalidusrname.github.com/blog/2007/06/12/10-points</id>
-    <content type="html"><![CDATA[<p>Well this just looks <a href="http://www.thinkgeek.com/stuff/41/wiihelm.shtml">stupid</a>.</p>
+    <content type="html"><![CDATA[<p>SonyEricsson announced some new cell phones today. I can’t wait for the <a href="http://www.sonyericsson.com/spg.jsp?cc=us&amp;lc=en&amp;ver=4000&amp;template=pip1&amp;pid=10868&amp;zone=pp">K850i</a> to come to the States.   Includes a 5 megapixel cam, NetFront browser, and tri-band HSDPA, and quadband GSM plus EDGE.</p>
 ]]></content>
   </entry>
   
