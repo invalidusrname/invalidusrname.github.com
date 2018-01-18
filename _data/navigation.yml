@@ -6,7 +6,7 @@ links:
 #   url: portfolio.html
 
 - title: About Me
-  url: about-me.html
+  url: /about-me.html
 
 # - title: Contact
 #   url: contact.html
