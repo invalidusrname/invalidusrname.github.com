@@ -4,7 +4,7 @@ title: Cover Songs
 author: Matt McMahand
 date: 2007/03/19
 comments: false
-categories: [Music, Playlists]
+categories: [Playlists]
 ---
 
 They're usually not as good as the original, but I like these ones.

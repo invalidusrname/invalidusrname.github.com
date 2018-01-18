@@ -4,7 +4,7 @@ title: Mas Geetar
 author: Matt McMahand
 date: 2007/04/23
 comments: false
-categories: [Music, Playlists]
+categories: [Playlists]
 ---
 
 <p>So perhaps something with more guitar; one not so much</p>

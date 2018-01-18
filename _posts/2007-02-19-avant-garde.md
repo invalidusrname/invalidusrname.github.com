@@ -4,7 +4,7 @@ title: Avant Garde
 author: Matt McMahand
 date: 2007/02/19
 comments: false
-categories: [Music, Playlists]
+categories: [Music]
 ---
 
 I've always had a thing for music tracks backing cartoons. It probably started sometime when I went to Disneyland when I was little. I visited an easily forgotten shop going down Main street. Inside and around the maroon velvet curtain played old disney clips. My guess would be they were from the depression era. I was too young to know the word nostalgia, even now I wouldn't use it to describe the feeling my ears were hearing, but there was something distinctive about the music being played in the background. Everything from Mickey whisteling, the patting of the horse's hooves, to clicking of the projector seemed to work into the music perfectly.
