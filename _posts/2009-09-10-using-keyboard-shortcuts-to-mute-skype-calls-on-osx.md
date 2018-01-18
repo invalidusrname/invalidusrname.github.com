@@ -5,6 +5,7 @@ author: Matt McMahand
 date: 2009-09-10
 comments: false
 categories: [Productivity]
+thumb: shortcut-thumb.jpg
 ---
 
 I’ve been a Skype user for over 5 years now. The service and call quality have always been great for single and conference style calls. One thing I’ve noticed about myself though is that I breathe into the headset at odd times, making everyone else feel like there’s serial killer or an angry giant on the other end. Skype solves these uncomfortable sounds for everyone else with the mute button. The downside is that there’s no shortcut for this. To mute you have to use the mouse, which is slower for me and louder when I click. My keyboard on the other hand is quick and really quiet.

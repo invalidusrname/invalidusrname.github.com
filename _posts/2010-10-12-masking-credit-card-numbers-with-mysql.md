@@ -5,6 +5,7 @@ author: Matt McMahand
 date: 2010-10-12
 comments: false
 categories: [Development]
+thumb: masking-cards-thumb.jpg
 ---
 
 So you need to export a list of credit card numbers and send it off someone, but don't want all the digits shown. Sometimes it's for post-processing, QA, or to solve a client dispute with an order. Whatever the case may be, here's how to mask numbers in MySQL:

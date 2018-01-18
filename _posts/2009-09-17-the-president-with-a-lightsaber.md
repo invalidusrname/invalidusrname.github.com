@@ -5,8 +5,9 @@ author: Matt McMahand
 date: 2009-09-17
 comments: false
 categories: []
+thumb: president-lightsaber-thumb.jpg
 ---
 
-<img src="http://0.tqn.com/d/politicalhumor/1/0/i/w/2/obama-light-saber-sm.jpg" alt="President Obama Holding a lightsaber" />
+<img src="/assets/images/president-lightsaber.jpg" alt="President Obama Holding a lightsaber" />
 
 How awesome is that?
