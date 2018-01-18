@@ -1,0 +1,10 @@
+---
+layout: post
+title: 10 Points.
+author: Matt McMahand
+date: 2007/06/12
+comments: false
+categories: [Random]
+---
+
+Well this just looks <a href="http://www.thinkgeek.com/stuff/41/wiihelm.shtml">stupid</a>.

@@ -1,0 +1,25 @@
+---
+layout: post
+title: "History"
+date: 2012-03-06 01:26
+comments: true
+categories: [Shell]
+---
+
+The more things change, the more they stay the same.
+
+<pre><code>
+$ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+64 git
+59 ./bin/rake
+56 ls
+53 vim
+44 cd
+30 gst
+20 gp
+17 cat
+16 rake
+13 glog
+</code>
+</pre>
+

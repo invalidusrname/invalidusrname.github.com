@@ -1,0 +1,10 @@
+---
+layout: post
+title: iTerm
+author: Matt McMahand
+date: 2007/07/09
+comments: false
+categories: [Apps]
+---
+
+A must have app for shell fans. The default terminal for OS X is decent, but lacks tabs, bookmarks, and multiple profiles. iTerm includes all these missing features. I've been running iTerm since version .71 and finally upgraded to .95 today. It looks like a few bugs I've been waiting for to be fixed, i.e. better wrapping, have been. <a href="http://iterm.sourceforge.net">Checks it out</a>.

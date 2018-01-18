@@ -1,0 +1,36 @@
+{% for post in site.posts limit:1 %}
+<article class="single-blog">
+  <div class="post-thumb">
+    <a href=""><img src="assets/images/post-thumb-1.jpg" alt=""></a>
+  </div>
+  <div class="post-content">
+    <div class="entry-header text-center text-uppercase">
+      {% if post.categories.size == 1 %}
+        <a href="#" class="post-cat">{{ post.categories.first }}</a>
+      {% else %}
+        {% for category in post.categories %}
+          <a href="#" class="post-cat">{{ category }}</a> 
+        {% endfor %}
+      {% endif %}
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    </div>
+
+    {{ assign }}
+    <div class="entry-content">
+      {{ post.content | split:'<!--break-->' | first }}
+    </div>
+    
+    {% if post.content contains '<!--break-->' %}
+      <div class="continue-reading text-center text-uppercase">
+        <a href="{{ post.url | relative_url }}">Continue Reading</a>
+      </div>
+    {% endif %}
+    <div class="post-meta">
+      <ul class="pull-left list-inline author-meta">
+        <li class="author">By <a href="#">{{ post.author }} </a></li>
+        <li class="date"> On {{ post.date | date: "%b %-d, %Y" }}</li>
+      </ul>
+    </div>
+  </div>
+</article>
+{% endfor %}

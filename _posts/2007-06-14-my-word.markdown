@@ -1,0 +1,10 @@
+---
+layout: post
+title: My Word!
+author: Matt McMahand
+date: 2007/06/14
+comments: false
+categories: [Electronics]
+---
+
+SonyEricsson announced some new cell phones today. I can't wait for the <a href="http://www.sonyericsson.com/spg.jsp?cc=us&lc=en&ver=4000&template=pip1&pid=10868&zone=pp">K850i</a> to come to the States.   Includes a 5 megapixel cam, NetFront browser, and tri-band HSDPA, and quadband GSM plus EDGE.

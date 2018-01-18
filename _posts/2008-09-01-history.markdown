@@ -1,0 +1,26 @@
+---
+layout: post
+title: History
+author: Matt McMahand
+date: 2008/09/01
+comments: false
+categories: [Shell]
+---
+
+<p>I’ve been trying out Git lately. Can you tell?</p>
+
+<pre><code>
+$ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+55 git
+44 cd
+42 ls
+39 rake
+35 ruby
+34 sudo
+26 ri
+21 port
+16 rm
+13 irb
+</code>
+</pre>
+

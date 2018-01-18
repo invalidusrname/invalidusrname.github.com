@@ -1,0 +1,16 @@
+---
+layout: post
+title: Playlist
+author: Matt McMahand
+date: 2006/11/23
+comments: false
+categories: [Music, Playlists]
+---
+
+They gave me an iTunes card at work. Here's what I brought.
+
+<p>
+<a href="http://www.invalid8.com/blog/wp-content/uploads/2006/11/playlist.png" title="" class="thickbox"><img class="reflect" src="http://www.invalid8.com/blog/wp-content/uploads/2006/11/playlist.thumbnail.png" alt="Fall '06 Playlist"/></a>
+</p>
+
+Strange, but I noticed after taking the screenshot that I've actually downloaded 81 (free/purchased) songs from the iTMS.

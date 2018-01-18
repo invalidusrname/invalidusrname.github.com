@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="kotha-default-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+
+            {% include latest_post.html %}
+
+            <div class="clearfix"></div>
+
+          </div>
+          <div class="col-sm-4">
+            <div class="kotha-sidebar">
+              <aside class="widget about-me-widget  text-center">
+                <div class="about-me-content">
+                  <div class="about-me-img">
+                    <img src="/assets/images/me.jpg" alt="" class="img-me img-circle">
+                    <h2 class="text-uppercase">Matt McMahand</h2>
+                    <p>I'm a software engineer who likes creating problems almost as much as I like solving them. I also do endurance sports and mountaineering.</p>
+                  </div>
+                </div>
+                <div class="social-share">
+                  <ul class="list-inline">
+                    <li><a class="s-goodreads" href="https://www.goodreads.com/user/show/4997897-matt-mcmahand"><i class="fa fa-book"></i></a></li>
+                    <li><a class="s-twitter" href="https://twitter.com/invalidusrname"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="s-github" href="https://github.com/invalidusrname"><i class="fa fa-github"></i></a></li>
+                    <li><a class="s-linkedin" href="https://www.linkedin.com/in/mattmcmahand"><i class="fa fa-linkedin"></i></a></li>
+                    
+                  </ul>
+                </div>
+              </aside>
+
+              <aside class="widget latest-post-widget">
+                <h2 class="widget-title text-uppercase text-center">Latest Posts</h2>
+                <ul>
+                  {% for post in site.posts offset:1 limit:5 %}
+                  <li class="media">
+                    <div class="media-left">
+                      {% if post.thumb %}
+                        <a href="#" class="popular-img"><img src="/assets/images/{{ post.thumb }}" alt=""></a>
+                      {% endif %}
+                    </div>
+                    <div class="latest-post-content">
+                      <h2 class="text-uppercase"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                      <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+  {% include scripts.html %}
+</html>
