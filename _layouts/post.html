@@ -100,24 +100,8 @@
                 </div>
               </aside>
 
-              <aside class="widget latest-post-widget">
-                <h2 class="widget-title text-uppercase text-center">Latest Posts</h2>
-                <ul>
-                  {% for post in site.posts offset:1 limit:5 %}
-                  <li class="media">
-                    <div class="media-left">
-                      {% if post.thumb %}
-                        <a href="#" class="popular-img"><img src="/assets/images/{{ post.thumb }}" alt=""></a>
-                      {% endif %}
-                    </div>
-                    <div class="latest-post-content">
-                      <h2 class="text-uppercase"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                      <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-                    </div>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </aside>
+              {% include latest_posts.html %}
+
             </div>
           </div>
         </div>
