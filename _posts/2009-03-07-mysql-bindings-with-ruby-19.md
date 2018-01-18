@@ -11,17 +11,25 @@ I've started messing around with Rails 2.3.1 (aka RC2) and seeing how it works w
 
 <em>Note: I'm using macports installations of <a href="http://trac.macports.org/browser/trunk/dports/lang/ruby19/Portfile">ruby 1.9</a> and <a href="http://trac.macports.org/browser/trunk/dports/databases/mysql5/Portfile">mysql</a></em>
 
-Grab mysql-ruby
-<code>wget http://rubyforge.org/frs/download.php/51087/mysql-ruby-2.8.1.tar.gz</code>
+{% highlight shell %}
 
-Setup to use your mysql configuration files
-<code>ruby1.9 extconf.rb --with-mysql-include=/opt/local/include/mysql5/mysql/ --with-mysql-lib=/opt/local/lib/mysql5/mysql/ --with-mysql-config=/opt/local/bin/mysql_config5
-</code>
+# Grab mysql-ruby
 
-<code>sudo make</code>
+wget http://rubyforge.org/frs/download.php/51087/mysql-ruby-2.8.1.tar.gz
 
-Run tests to make sure everything passes
-<code>ruby1.9 ./test.rb -- localhost</code>
+# Setup to use your mysql configuration files
 
-And to finish it out
-<code>sudo make install</code>
+ruby1.9 extconf.rb \
+  --with-mysql-include=/opt/local/include/mysql5/mysql/ \
+  --with-mysql-lib=/opt/local/lib/mysql5/mysql/ \
+  --with-mysql-config=/opt/local/bin/mysql_config5
+
+sudo make
+
+# Run tests to make sure everything passes
+ruby1.9 ./test.rb -- localhost
+
+# And to finish it out
+sudo make install
+
+{% endhighlight %}
