@@ -2,7 +2,7 @@
 layout: post
 title: A few tracks
 author: Matt McMahand
-date: 2018/01/14
+date: 2018-01-14
 comments: false
 categories: [Playlists]
 thumb:

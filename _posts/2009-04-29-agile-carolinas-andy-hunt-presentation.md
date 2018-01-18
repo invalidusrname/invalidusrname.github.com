@@ -2,7 +2,7 @@
 layout: post
 title: Agile Carolinas Andy Hunt Presentation
 author: Matt McMahand
-date: 2009/04/29
+date: 2009-04-29
 comments: false
 categories: [Development]
 ---

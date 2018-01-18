@@ -2,7 +2,7 @@
 layout: post
 title: Work Speeds
 author: Matt McMahand
-date: 2007/10/12
+date: 2007-10-12
 comments: false
 categories: []
 ---

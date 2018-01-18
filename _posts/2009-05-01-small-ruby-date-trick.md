@@ -2,7 +2,7 @@
 layout: post
 title: Small Ruby Date trick
 author: Matt McMahand
-date: 2009/05/01
+date: 2009-05-01
 comments: false
 categories: [Ruby, Development]
 ---

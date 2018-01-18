@@ -2,7 +2,7 @@
 layout: post
 title: Old is the new
 author: Matt McMahand
-date: 2007/03/03
+date: 2007-03-03
 comments: false
 categories: [PHP]
 ---

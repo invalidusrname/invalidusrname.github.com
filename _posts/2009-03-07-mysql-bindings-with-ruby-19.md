@@ -2,7 +2,7 @@
 layout: post
 title: MySQL bindings with Ruby 1.9
 author: Matt McMahand
-date: 2009/03/07
+date: 2009-03-07
 comments: false
 categories: [Ruby, Development]
 ---

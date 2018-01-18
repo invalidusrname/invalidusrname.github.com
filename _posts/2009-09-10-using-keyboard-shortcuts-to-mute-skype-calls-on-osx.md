@@ -2,7 +2,7 @@
 layout: post
 title: Using Keyboard Shortcuts to Mute Skype Calls on OSX
 author: Matt McMahand
-date: 2009/09/10
+date: 2009-09-10
 comments: false
 categories: [Productivity]
 ---

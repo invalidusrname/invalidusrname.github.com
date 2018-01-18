@@ -2,7 +2,7 @@
 layout: post
 title: Masking Credit Card Numbers with MySQL
 author: Matt McMahand
-date: 2010/10/12
+date: 2010-10-12
 comments: false
 categories: [Development]
 ---

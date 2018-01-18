@@ -2,7 +2,7 @@
 layout: post
 title: In Rainbows
 author: Matt McMahand
-date: 2007/10/11
+date: 2007-10-11
 comments: false
 categories: [Music]
 ---

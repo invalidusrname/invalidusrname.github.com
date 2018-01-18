@@ -2,7 +2,7 @@
 layout: post
 title: Radiohead Snippets
 author: Matt McMahand
-date: 2007/06/16
+date: 2007-06-16
 comments: false
 categories: [Music]
 ---

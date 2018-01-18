@@ -2,7 +2,7 @@
 layout: post
 title: The President with a Lightsaber
 author: Matt McMahand
-date: 2009/09/17
+date: 2009-09-17
 comments: false
 categories: []
 ---

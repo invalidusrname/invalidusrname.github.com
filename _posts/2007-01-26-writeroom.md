@@ -2,7 +2,7 @@
 layout: post
 title: WriteRoom
 author: Matt McMahand
-date: 2007/01/26
+date: 2007-01-26
 comments: false
 categories: [Apps]
 ---
@@ -19,4 +19,4 @@ Cake? Rubbish. Delete.
 
 Well that got us nowhere.
 
-Although I don't have much to say, I did start reading Rosenberg's <a href="http://www.dreamingincode.com/">Dreaming in Code</a> and must say it's a pretty good so far. It's not a technical book like something from O'Reilly or Apress, rather a look at a start-up from a nontechnical person's point of view. From what I've read so far, me likie. I've never read a book that's so eloquently woven a company and the process of programming together. I'm jealous.
+Although I don't have much to say, I did start reading Rosenberg's [Dreaming in Code](http://www.dreamingincode.com) and must say it's a pretty good so far. It's not a technical book like something from O'Reilly or Apress, rather a look at a start-up from a nontechnical person's point of view. From what I've read so far, me likie. I've never read a book that's so eloquently woven a company and the process of programming together. I'm jealous.

@@ -2,7 +2,7 @@
 layout: post
 title: Cymbal Rush
 author: Matt McMahand
-date: 2008/06/15
+date: 2008-06-15
 comments: false
 categories: [Music]
 ---
