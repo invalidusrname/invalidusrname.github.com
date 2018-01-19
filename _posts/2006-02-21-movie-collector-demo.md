@@ -3,7 +3,7 @@ layout: post
 title: Movie Collector Demo
 author: Matt McMahand
 date: 2006-02-21
-comments: false
+comments: true
 categories: [Projects]
 ---
 

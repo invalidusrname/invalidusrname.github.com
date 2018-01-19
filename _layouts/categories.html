@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="kotha-default-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+
+		    <div class="col-md-12">
+
+			  {% assign categories = site.categories | sort %}
+
+			  {% for tag in categories %}
+				<article class="single-blog post-list single-category">
+					<div class="post-content">
+						<div class="text-center text-uppercase">
+							<h3 class="">{{ tag[0] | capitalize }}</h3>
+						</div>
+				
+    				{% assign pages_list = tag[1] %}
+				
+    					<div class="entry-content">
+					  		<ul>
+    						{% for post in pages_list %}
+    				  			{% if post.title != null %}
+    					  			{% if group == null or group == post.group %}
+						  			<li>{{ post.date | date: "%b %-d, %Y" }}
+						  				<h4>
+					      					<a href="{{ site.url }}{{ post.url }}">{{ post.	title }}</a>
+					      				</h4>
+					      			</li>
+    				  				{% endif %}
+    				  			{% endif %}
+    						{% endfor %}
+    						</ul>
+    					</div>
+				
+    				{% assign pages_list = nil %}
+    				{% assign group = nil %}
+
+				  </div>
+				</article>
+
+			  {% endfor %}
+
+			</div>
+		  </div>
+
+
+          <div class="col-sm-4">
+            <div class="kotha-sidebar">
+              <aside class="widget about-me-widget  text-center">
+                <div class="about-me-content">
+                  <div class="about-me-img">
+                    <img src="/assets/images/me.jpg" alt="" class="img-me img-circle">
+                    <h2 class="text-uppercase">Matt McMahand</h2>
+                    <p>I'm a software engineer who likes creating problems almost as much as I like solving them. I also do endurance sports and mountaineering.</p>
+                  </div>
+                </div>
+                <div class="social-share">
+                  <ul class="list-inline">
+                    <li><a class="s-goodreads" href="https://www.goodreads.com/user/show/4997897-matt-mcmahand"><i class="fa fa-book"></i></a></li>
+                    <li><a class="s-twitter" href="https://twitter.com/invalidusrname"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="s-github" href="https://github.com/invalidusrname"><i class="fa fa-github"></i></a></li>
+                    <li><a class="s-linkedin" href="https://www.linkedin.com/in/mattmcmahand"><i class="fa fa-linkedin"></i></a></li>
+                    
+                  </ul>
+                </div>
+              </aside>
+
+              {% include latest_posts.html %}
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+  {% include scripts.html %}
+</html>
+

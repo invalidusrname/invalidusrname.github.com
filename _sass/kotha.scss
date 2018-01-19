@@ -24,3 +24,10 @@ Version: 2.0
 @import 'kotha/home/_megazine.scss';
 
 @import 'kotha/layouts/_mobile.scss';
+
+
+/* custom rules */
+
+.single-category h3 {
+	color: $theme-brand-color;
+}

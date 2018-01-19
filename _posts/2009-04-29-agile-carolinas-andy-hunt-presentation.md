@@ -3,11 +3,13 @@ layout: post
 title: Agile Carolinas Andy Hunt Presentation
 author: Matt McMahand
 date: 2009-04-29
-comments: false
+comments: true
 categories: [Development]
 ---
 
 When I first moved out to Charlotte, I didn’t have much experience working in a corporate environment, and I went along with many of bad practices the company had. Around the same time I picked up The Pragmatic Programmer by Andy Hunt and tried to use the tips in the book. Sometimes I used the tips at the wrong time or misinterpreted principles, but for the most part it helped bring out many of the social and communicative aspects of being a programmer that I wasn’t very good at. Being able to detect a bad situation before things turn ugly can be a lifesaver. It also helped with preventing me for constantly working 50+ hrs a week and not benefitting from it.
+
+<!--break-->
 
 That was about 4 years ago. Fast forward to yesterday, where I attended an Agile Carolina meetup. I’ve been a member for about a year, but haven’t attended to any meetings lately. Then I got an email saying Andy Hunt was coming down to Charlotte and was going to give a talk on how to “Refactor Your Wetware”. Odd title, but if it was going to be anything like his books, I couldn’t miss the talk.
 
