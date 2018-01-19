@@ -31,3 +31,19 @@ Version: 2.0
 .single-category h3 {
 	color: $theme-brand-color;
 }
+
+.about-us-text a {
+	color: $theme-brand-color;
+}
+
+.about-us-text a:hover {
+	text-decoration: underline;
+}
+
+.entry-content a {
+	color: $theme-brand-color;
+}
+
+.entry-content a:hover {
+	text-decoration: underline;
+}
