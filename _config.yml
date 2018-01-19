@@ -18,6 +18,7 @@ title: Title Be Here
 subtitle: 
 author: Matt McMahand
 simple_search: http://google.com/search
+name: Title Be Here
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://invalid8.com" # the base hostname & protocol for your site, e.g. http://example.com
