@@ -3,7 +3,7 @@ layout: post
 title: First EnvyCasts Video is available
 author: Matt McMahand
 date: 2008-08-31
-comments: false
+comments: true
 categories: [Development, Ruby]
 ---
 
