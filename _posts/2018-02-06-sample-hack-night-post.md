@@ -10,3 +10,4 @@ thumb:
 
 Hello from Charlotte-Ruby
 
+<a href="sms:123456790&body=Hi BOB">I pre-populate an SMS</a>
