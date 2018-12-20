@@ -19,7 +19,7 @@ subtitle:
 author: Matt McMahand
 simple_search: http://google.com/search
 name: Title Be Here
-description:
+description: "writings of a software engineer who happens to do endurance sports"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://invalid8.com" # the base hostname & protocol for your site, e.g. http://example.com
 
