@@ -1,9 +1,0 @@
----
-layout: post
-title: Alho?
-author: Matt McMahand
-date: 2006/07/04
-comments: false
-categories: []
----
-Reading, studying, working, and more. We're alive, oh yes we are.
