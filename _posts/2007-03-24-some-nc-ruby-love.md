@@ -7,4 +7,8 @@ comments: false
 categories: [Events]
 ---
 
-[Ruby Hoedown](http://www.rubyhoedown.com)
+A regional ruby conference is happening.
+
+<del>[Ruby Hoedown](http://www.rubyhoedown.com)</del>
+
+<i>Edit: Looks like the conference site is no longer available</i>
