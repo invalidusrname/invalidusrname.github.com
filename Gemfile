@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby File.open('.ruby-version', 'rb') { |f| f.read.chomp }
 
-gem "jekyll", "~> 3.7.0"
+gem "jekyll", "~> 3.8.5"
 gem "rack-jekyll", "0.5.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
