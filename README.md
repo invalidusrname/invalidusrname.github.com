@@ -3,7 +3,7 @@
 Getting started:
 
 
-    bundle install
+    bundle
     bundle exec jekyll s
     open http://localhost:4000
 
