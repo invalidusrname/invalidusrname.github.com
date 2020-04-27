@@ -1,7 +1,11 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   Exclude:
     - "bin/**"
     - "_site/bin/**"
+
+require: rubocop-md
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
@@ -17,13 +21,6 @@ Style/HashTransformKeys:
   Enabled: true
 Style/HashTransformValues:
   Enabled: true
-
-Layout/LineLength:
-  Max: 91
-  Exclude:
-    - _posts/**
-
-inherit_from: .rubocop_todo.yml
 # The behavior of RuboCop can be controlled via the .rubocop.yml
 # configuration file. It makes it possible to enable/disable
 # certain cops (checks) and to alter their behavior if they accept
