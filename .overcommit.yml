@@ -21,3 +21,5 @@ PreCommit:
     on_warn: fail # Treat all warnings as failures
   TrailingWhitespace:
     enabled: true
+  CapitalizedSubject:
+    enabled: false
