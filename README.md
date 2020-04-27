@@ -3,10 +3,10 @@
 Getting started:
 
 ```sh
-$ pre-commit install
-$ bundle
-$ ./bin/jekyll s
-$ open http://localhost:4000
+pre-commit install
+bundle
+./bin/jekyll s
+open http://localhost:4000
 ```
 
 Testing:
