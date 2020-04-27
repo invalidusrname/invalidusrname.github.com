@@ -6,7 +6,6 @@ ruby File.open('.ruby-version', 'rb') { |f| f.read.chomp }
 
 gem 'jekyll', '~> 3.8.5'
 gem 'rack-jekyll', '0.5.0'
-
 gem 'rubocop'
 gem 'rubocop-md'
 
