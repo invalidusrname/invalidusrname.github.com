@@ -4,7 +4,7 @@ Getting started:
 
 
     bundle
-    bundle exec jekyll s
+    ./bin/jekyll s
     open http://localhost:4000
 
 Deploying:
