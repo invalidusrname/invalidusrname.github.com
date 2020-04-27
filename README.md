@@ -2,9 +2,12 @@
 
 Getting started:
 
-    bundle
-    ./bin/jekyll s
-    open http://localhost:4000
+```sh
+$ pre-commit install
+$ bundle
+$ ./bin/jekyll s
+$ open http://localhost:4000
+```
 
 Testing:
 
