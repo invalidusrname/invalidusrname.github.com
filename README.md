@@ -29,4 +29,6 @@ Currently hosted on Heroku.
 
 Things get built and served using Rack::Jekyll (via rackup)
 
-    git push origin heroku
+```sh
+git push origin heroku
+```
