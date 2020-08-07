@@ -5,7 +5,8 @@ source 'https://rubygems.org'
 ruby File.open('.ruby-version', 'rb') { |f| f.read.chomp }
 
 gem 'jekyll', '~> 3.9'
-gem 'rack-jekyll', '0.5'
+gem 'rack-jekyll', git: 'https://github.com/adaoraul/rack-jekyll.git',
+                   ref: 'a997bd0'
 
 gem 'kramdown-parser-gfm'
 gem 'minima', '~> 2.0'
