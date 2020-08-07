@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 
 ruby File.open('.ruby-version', 'rb') { |f| f.read.chomp }
 
-gem 'jekyll', '~> 3.8.5'
-gem 'rack-jekyll', '0.5.0'
+gem 'jekyll', '~> 3.9'
+gem 'rack-jekyll', '0.5'
 gem 'rubocop'
 gem 'rubocop-md'
 
