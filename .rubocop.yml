@@ -4,6 +4,7 @@ AllCops:
   Exclude:
     - "bin/**"
     - "_site/bin/**"
+    - "lib/patches.rb"
 
 require: rubocop-md
 
