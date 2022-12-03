@@ -32,5 +32,13 @@ module Rack
 
       request.head? ? remove_body(response) : response
     end
+
+    def serve_wait_page(req)
+      headers ||= {}
+      headers['content-length'] = @wait_page.bytesize.to_s
+      headers['content-type'] = 'text/html'
+      headers['Connection'] = 'keep-alive'
+      [200, headers, [@wait_page]]
+    end
   end
 end
