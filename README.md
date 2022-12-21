@@ -25,4 +25,4 @@ Not super important, but nice to have some style enforcement in place:
 
 Deploying:
 
-Requires [build](https://github.com/invalidusrname/invalidusrname.github.com/actions/workflows/build.yml) workflow to pass. Deployments happen after that via the [pages-build-deployment](https://github.com/invalidusrname/invalidusrname.github.com/actions/workflows/pages/pages-build-deployment) Workflow
+Requires [build](https://github.com/invalidusrname/invalidusrname.github.com/actions/workflows/build.yml?query=branch%3Amaster+) workflow to pass. Deployments happen after that via the [pages-build-deployment](https://github.com/invalidusrname/invalidusrname.github.com/actions/workflows/pages/pages-build-deployment) Workflow
