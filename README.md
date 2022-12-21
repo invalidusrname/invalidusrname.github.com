@@ -25,10 +25,4 @@ Not super important, but nice to have some style enforcement in place:
 
 Deploying:
 
-Currently hosted on Heroku.
-
-Things get built and served using Rack::Jekyll (via rackup)
-
-```sh
-git push heroku
-```
+Requires [build](https://github.com/invalidusrname/invalidusrname.github.com/actions/workflows/build.yml) workflow to pass. Deployments happen after that via the [pages-build-deployment](https://github.com/invalidusrname/invalidusrname.github.com/actions?query=workflow%3Apages-build-deployment) Workflow
