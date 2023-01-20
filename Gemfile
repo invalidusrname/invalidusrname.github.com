@@ -11,6 +11,10 @@ gem 'rack-jekyll', git: 'https://github.com/adaoraul/rack-jekyll.git',
 gem 'kramdown-parser-gfm'
 gem 'minima', '~> 2.0'
 gem 'puma'
+
+# just a sample comment
+# just a sample comment
+
 gem 'rackup'
 gem 'rake', '~> 13.0'
 gem 'sassc', '~> 2.4'
