@@ -9,7 +9,7 @@ gem 'rack-jekyll', git: 'https://github.com/adaoraul/rack-jekyll.git',
                    ref: 'a997bd0'
 
 # related https://github.com/jekyll/jekyll/pull/9392
-gem 'logger', '< 1.4.3'
+gem 'logger', '< 1.6.1'
 
 gem 'kramdown-parser-gfm'
 gem 'minima', '~> 2.0'
