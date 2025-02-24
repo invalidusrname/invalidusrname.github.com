@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby File.open('.ruby-version', 'rb') { |f| f.read.chomp }
 
-gem 'jekyll', '~> 4.3'
+gem 'jekyll', '~> 4.4'
 gem 'rack-jekyll', git: 'https://github.com/adaoraul/rack-jekyll.git',
                    ref: 'a997bd0'
 
