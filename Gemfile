@@ -12,7 +12,7 @@ gem 'kramdown-parser-gfm'
 gem 'minima', '~> 2.5'
 gem 'puma'
 gem 'rackup'
-gem 'rake', '~> 13.2'
+gem 'rake', '~> 13.3'
 gem 'sassc', '~> 2.4'
 
 # If you have any plugins, put them here!
