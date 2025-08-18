@@ -1,3 +1,5 @@
+[![Ruby](https://github.com/invalidusrname/invalidusrname.github.com/actions/workflows/build.yml/badge.svg)](https://github.com/invalidusrname/invalidusrname.github.com/actions/workflows/build.yml)
+
 # Personal Site
 
 Prerequisites:
