@@ -9,6 +9,7 @@ gem 'rack-jekyll', git: 'https://github.com/adaoraul/rack-jekyll.git',
                    ref: 'a997bd0'
 
 gem 'kramdown-parser-gfm'
+gem 'logger', '~> 1.7'
 gem 'minima', '~> 2.5'
 gem 'puma'
 gem 'rackup'
